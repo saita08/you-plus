@@ -1,0 +1,11 @@
+{
+  "name": "you-plus",
+  "owner": { "name": "saita08" },
+  "plugins": [
+    {
+      "name": "you-plus",
+      "source": "./",
+      "description": "熟達者の暗黙の思考の動き——言語化・構造化・標準との突き合わせ・不足の補充——を、対話として初心者にも通れる道にするスキル群"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "you-plus",
+  "description": "AIとの協働で熟達者が暗黙にやっている思考の動き——言語化・構造化・標準との突き合わせ・不足の補充——を、対話として初心者にも通れる道にするスキル群。拡張されるのは使う本人",
+  "author": { "name": "saita08" },
+  "repository": "https://github.com/saita08/you-plus",
+  "license": "MIT",
+  "keywords": ["scaffolding", "kickoff", "planning", "coaching"]
+}
