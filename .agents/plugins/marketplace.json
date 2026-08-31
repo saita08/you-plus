@@ -1,0 +1,12 @@
+{
+  "name": "you-plus",
+  "plugins": [
+    {
+      "name": "you-plus",
+      "source": {
+        "source": "local",
+        "path": "./"
+      }
+    }
+  ]
+}

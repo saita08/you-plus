@@ -4,8 +4,7 @@
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-09-01
+
 ### Added
-- Claude Code のマーケットプレイス対応(.claude-plugin/): `/plugin marketplace add saita08/you-plus` で登録できる
-- リポジトリを開始。スキル本体はまだない
-- MIT ライセンス
-- チェンジログの版切り出しを契機に、タグ・GitHub Release・.skill の添付までを自動化
+- add shape-your-feature skill
