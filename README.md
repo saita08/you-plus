@@ -24,6 +24,12 @@ npx skills add saita08/you-plus
 
 ### Claude Code
 
+Claude Code だけに入れる場合は、コマンドラインで次を実行する。`.agents/` を作らず、`.claude/skills/` へ直接入る。
+
+```sh
+npx skills add saita08/you-plus --agent claude-code
+```
+
 マーケットプレイスとして登録する場合は、Claude Code 内で次を実行する。
 
 ```
@@ -33,7 +39,13 @@ npx skills add saita08/you-plus
 
 ### Codex と ChatGPT
 
-Codex 内で次を実行し、マーケットプレイスとして登録する。
+Codex だけに入れる場合は、コマンドラインで次を実行する。Codex が直接読む `.agents/skills/` へ入る。
+
+```sh
+npx skills add saita08/you-plus --agent codex
+```
+
+マーケットプレイスとして登録する場合は、Codex 内で次を実行する。
 
 ```
 /plugin marketplace add saita08/you-plus
@@ -78,6 +90,12 @@ npx skills add saita08/you-plus
 
 ### Claude Code
 
+To install for Claude Code only, run the following from the command line. Skills go directly into `.claude/skills/`, without creating `.agents/`.
+
+```sh
+npx skills add saita08/you-plus --agent claude-code
+```
+
 To register the repository as a marketplace, run the following inside Claude Code.
 
 ```
@@ -87,7 +105,13 @@ To register the repository as a marketplace, run the following inside Claude Cod
 
 ### Codex and ChatGPT
 
-Run the following inside Codex to register the repository as a marketplace.
+To install for Codex only, run the following from the command line. Skills go into `.agents/skills/`, which Codex reads directly.
+
+```sh
+npx skills add saita08/you-plus --agent codex
+```
+
+To register the repository as a marketplace, run the following inside Codex.
 
 ```
 /plugin marketplace add saita08/you-plus
