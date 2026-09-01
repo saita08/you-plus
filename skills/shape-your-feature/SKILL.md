@@ -1,6 +1,6 @@
 ---
 name: shape-your-feature
-description: For someone who already knows what they want to build, used before they start building. Sees the idea as a known pattern, asks what the user already has and already knows that could serve it, hands over how to search for the rest, and — on the user's call — lands everything in a plan for an implementing AI. For moments like "I want to start building this" or "I want to think this through before I write code."
+description: Give it the thing the user wants to build, described in the user's own words — a sentence is enough, and no developer vocabulary is needed.
 ---
 
 # Aligning before implementation
