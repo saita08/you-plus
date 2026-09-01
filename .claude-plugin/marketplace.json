@@ -1,11 +1,14 @@
 {
   "name": "you-plus",
   "owner": { "name": "saita08" },
+  "description": "熟達者の暗黙の思考の動き——言語化・パターン化・標準との突き合わせ・不足の補充——を、対話として初心者にも通れる道にするスキル群。拡張されるのは使う本人",
   "plugins": [
     {
-      "name": "you-plus",
+      "name": "shape-your-feature",
       "source": "./",
-      "description": "熟達者の暗黙の思考の動き——言語化・構造化・標準との突き合わせ・不足の補充——を、対話として初心者にも通れる道にするスキル群"
+      "description": "作りたいものが決まっている人が、作り始める前に使う。既に持っているものと知っていることを問いで取り出し、足りない分は調べ方ごと渡し、AI に渡せる計画書に着地させる",
+      "skills": ["./skills/shape-your-feature"],
+      "strict": false
     }
   ]
 }

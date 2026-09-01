@@ -4,6 +4,11 @@
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-09-01
+
+### Fixed
+- General maintenance and improvements.
+
 ## [1.0.1] - 2026-09-01
 
 ### Fixed

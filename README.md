@@ -8,7 +8,7 @@ English version follows the Japanese section.
 
 | スキル | 用途 |
 |---|---|
-| [shape-your-feature](skills/shape-your-feature/SKILL.md) | 何かを作り始める前に使う。構想を問いで引き出し、構造化し、不足している定石を補い、AI に渡せる計画書にまとめる |
+| [shape-your-feature](skills/shape-your-feature/SKILL.md) | 作りたいものが決まっている人が、作り始める前に使う。既に持っているものと知っていることを問いで取り出し、足りない分は調べ方ごと渡し、AI に渡せる計画書に着地させる |
 
 ## 導入方法
 
@@ -30,11 +30,11 @@ Claude Code だけに入れる場合は、コマンドラインで次を実行�
 npx skills add saita08/you-plus --agent claude-code
 ```
 
-マーケットプレイスとして登録する場合は、Claude Code 内で次を実行する。
+マーケットプレイスとして登録する場合は、Claude Code 内で次を実行する。スキルは一つずつ独立したプラグインなので、使うものだけ選んで入れられる。
 
 ```
 /plugin marketplace add saita08/you-plus
-/plugin install you-plus@you-plus
+/plugin install shape-your-feature@you-plus
 ```
 
 ### Codex と ChatGPT
@@ -74,7 +74,7 @@ Hand everything to AI and you get something that works — while your own unders
 
 | Skill | Purpose |
 |---|---|
-| [shape-your-feature](skills/shape-your-feature/SKILL.md) | Use before starting to build something. Draws out your idea through questions, structures it, supplies missing standard practices, and lands everything in a plan you can hand to an AI |
+| [shape-your-feature](skills/shape-your-feature/SKILL.md) | For someone who already knows what they want to build, used before they start. Draws out what you already have and already know through questions, hands over how to search for the rest, and lands everything in a plan you can hand to an AI |
 
 ## Installation
 
@@ -96,11 +96,11 @@ To install for Claude Code only, run the following from the command line. Skills
 npx skills add saita08/you-plus --agent claude-code
 ```
 
-To register the repository as a marketplace, run the following inside Claude Code.
+To register the repository as a marketplace, run the following inside Claude Code. Each skill is its own plugin, so you can install only the ones you need.
 
 ```
 /plugin marketplace add saita08/you-plus
-/plugin install you-plus@you-plus
+/plugin install shape-your-feature@you-plus
 ```
 
 ### Codex and ChatGPT
@@ -123,7 +123,7 @@ In the ChatGPT desktop app, add this marketplace in the Plugins Directory and in
 ### Claude.ai
 
 1. Download a .skill file from [Releases](../../releases)
-2. Open Settings > Capabilities > Skills and upload it
+2. Open Settings > Customize > Skills and upload it
 3. The skill activates automatically when a relevant conversation begins
 
 ## License
