@@ -1,6 +1,6 @@
 # you-plus
 
-AI に丸ごと任せれば、形にはなる。ただ、自分の理解が置いていかれる——you-plus はそこを埋めるスキル群である。AI が代わりに考えるのではなく、問いに答えるうちに自分の考えが言葉になり、構造になり、足りなかった定石が埋まっていく。対話が終わったとき、手元には自分の言葉で書かれた文書と、次は一人で考えられる引き出しが残る。
+AI に丸ごと任せれば、形にはなる。ただ、自分の理解が置いていかれる——you-plus はそこを埋めるスキル群である。AI が代わりに考えるのではなく、問いに答えるうちに自分の考えが言葉になり、パターンとして見え、足りなかった定石が埋まっていく。対話が終わったとき、手元には自分の言葉で書かれた文書と、次は一人で考えられる引き出しが残る。
 
 English version follows the Japanese section.
 
@@ -10,55 +10,39 @@ English version follows the Japanese section.
 |---|---|
 | [shape-your-feature](skills/shape-your-feature/SKILL.md) | 作りたいものが決まっている人が、作り始める前に使う。既に持っているものと知っていることを問いで取り出し、足りない分は調べ方ごと渡し、AI に渡せる計画書に着地させる |
 
-## 導入方法
+## 導入
 
-同一のスキル一式が、以下のすべての経路で利用できる。
+同じスキル一式が、どの経路からも入る。
 
-### npx skills 対応エージェント
+### コマンドラインから
 
-コマンドラインで次を実行する。Claude Code を含む、対応するエージェントすべてで使える。
+| 対象 | コマンド |
+|---|---|
+| npx skills 対応エージェント | `npx skills add saita08/you-plus` |
+| gh skill 対応エージェント | `gh skill install saita08/you-plus` |
+| Claude Code のみ | `npx skills add saita08/you-plus --agent claude-code` |
+| Codex のみ | `npx skills add saita08/you-plus --agent codex` |
 
-```sh
-npx skills add saita08/you-plus
-```
+### マーケットプレイスから
 
-### Claude Code
-
-Claude Code だけに入れる場合は、コマンドラインで次を実行する。`.agents/` を作らず、`.claude/skills/` へ直接入る。
-
-```sh
-npx skills add saita08/you-plus --agent claude-code
-```
-
-マーケットプレイスとして登録する場合は、Claude Code 内で次を実行する。スキルは一つずつ独立したプラグインなので、使うものだけ選んで入れられる。
+Claude Code 内で実行する。スキルごとに一つのプラグインなので、使うものだけ入れる。
 
 ```
 /plugin marketplace add saita08/you-plus
 /plugin install shape-your-feature@you-plus
 ```
 
-### Codex と ChatGPT
-
-Codex だけに入れる場合は、コマンドラインで次を実行する。Codex が直接読む `.agents/skills/` へ入る。
-
-```sh
-npx skills add saita08/you-plus --agent codex
-```
-
-マーケットプレイスとして登録する場合は、Codex 内で次を実行する。
+Codex 内で実行する。ChatGPT デスクトップアプリは Plugins Directory に同じマーケットプレイスを追加する。
 
 ```
 /plugin marketplace add saita08/you-plus
 /plugin install you-plus@you-plus
 ```
 
-ChatGPT デスクトップアプリでは、Plugins Directory にこのマーケットプレイスを追加してインストールする。
-
 ### Claude.ai
 
-1. [Releases](../../releases) から .skill ファイルをダウンロードする
-2. 設定から カスタマイズ > スキル を開き、アップロードする
-3. 該当する話題を始めると、スキルが自動で適用される
+1. [Releases](https://github.com/saita08/you-plus/releases) からスキルの zip をダウンロードする
+2. 設定 > カスタマイズ > スキル からアップロードする
 
 ## ライセンス
 
@@ -68,7 +52,7 @@ ChatGPT デスクトップアプリでは、Plugins Directory にこのマーケ
 
 # you-plus (English)
 
-Hand everything to AI and you get something that works — while your own understanding falls behind. you-plus is a set of skills that closes that gap. Instead of the AI thinking for you, you answer questions until your idea takes words, then shape, and the standard practices you were missing fall into place. When the dialogue ends, you are left with a document written in your own words — and thinking you can reuse on your own next time.
+Hand everything to AI and you get something that works — while your own understanding falls behind. you-plus is a set of skills that closes that gap. Instead of the AI thinking for you, you answer questions until your idea takes words, then shows itself as a known pattern, and the standard practices you were missing fall into place. When the dialogue ends, you are left with a document written in your own words — and thinking you can reuse on your own next time.
 
 ## Skills
 
@@ -78,53 +62,37 @@ Hand everything to AI and you get something that works — while your own unders
 
 ## Installation
 
-The same set of skills works through every route below.
+The same set of skills installs through any of these routes.
 
-### Agents that support npx skills
+### From the command line
 
-Run the following from the command line. It works for every supported agent, Claude Code included.
+| Target | Command |
+|---|---|
+| Agents that support npx skills | `npx skills add saita08/you-plus` |
+| Agents that support gh skill | `gh skill install saita08/you-plus` |
+| Claude Code only | `npx skills add saita08/you-plus --agent claude-code` |
+| Codex only | `npx skills add saita08/you-plus --agent codex` |
 
-```sh
-npx skills add saita08/you-plus
-```
+### From a marketplace
 
-### Claude Code
-
-To install for Claude Code only, run the following from the command line. Skills go directly into `.claude/skills/`, without creating `.agents/`.
-
-```sh
-npx skills add saita08/you-plus --agent claude-code
-```
-
-To register the repository as a marketplace, run the following inside Claude Code. Each skill is its own plugin, so you can install only the ones you need.
+Run inside Claude Code. Each skill is its own plugin, so install only the ones you need.
 
 ```
 /plugin marketplace add saita08/you-plus
 /plugin install shape-your-feature@you-plus
 ```
 
-### Codex and ChatGPT
-
-To install for Codex only, run the following from the command line. Skills go into `.agents/skills/`, which Codex reads directly.
-
-```sh
-npx skills add saita08/you-plus --agent codex
-```
-
-To register the repository as a marketplace, run the following inside Codex.
+Run inside Codex. In the ChatGPT desktop app, add the same marketplace in the Plugins Directory.
 
 ```
 /plugin marketplace add saita08/you-plus
 /plugin install you-plus@you-plus
 ```
 
-In the ChatGPT desktop app, add this marketplace in the Plugins Directory and install from there.
-
 ### Claude.ai
 
-1. Download a .skill file from [Releases](../../releases)
-2. Open Settings > Customize > Skills and upload it
-3. The skill activates automatically when a relevant conversation begins
+1. Download the skill's zip from [Releases](https://github.com/saita08/you-plus/releases)
+2. Upload it under Settings > Customize > Skills
 
 ## License
 

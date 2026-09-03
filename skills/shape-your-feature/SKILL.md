@@ -1,6 +1,7 @@
 ---
 name: shape-your-feature
 description: Give it the thing the user wants to build, described in the user's own words — a sentence is enough, and no developer vocabulary is needed.
+license: MIT
 ---
 
 # Aligning before implementation

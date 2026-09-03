@@ -4,6 +4,14 @@
 
 ## [Unreleased]
 
+## [1.0.4] - 2026-09-03
+
+### Added
+- Install through the GitHub CLI: `gh skill install saita08/you-plus`
+
+### Changed
+- Release assets are now `<skill>.zip` instead of `<skill>.skill`, matching what Claude.ai accepts for upload. The contents are unchanged
+
 ## [1.0.3] - 2026-09-01
 
 ### Fixed
